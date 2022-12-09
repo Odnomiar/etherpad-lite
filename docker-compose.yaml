@@ -23,7 +23,7 @@ services:
       - "8159:8159"
 
   mysql:
-    image: mysql:latest
+    image: mysql/mysql-server:8.0.28-1.2.7-server-aarch64
     restart: always
     environment:
       - MYSQL_ROOT_PASSWORD
