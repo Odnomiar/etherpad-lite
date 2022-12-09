@@ -20,10 +20,10 @@ services:
       - ETHERPAD_API_KEY
       - ETHERPAD_SESSION_REQUIRED
     ports:
-      - "127.0.0.1:${ETHERPAD_HOST_PORT}:9001"
+      - "8159:8159"
 
-  mariadb:
-    image: mariadb:10.4
+  mysql:
+    image: mysql:latest
     restart: always
     environment:
       - MYSQL_ROOT_PASSWORD
